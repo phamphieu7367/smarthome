@@ -1,38 +1,139 @@
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20230413/pngtree-beautiful-lawn-house-cartoon-house-background-image_2207358.jpg");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-data {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 600px;
+  height: 400px;
+  margin-right: 10px;
+  background-color: rgba(250, 250, 250, 0.85);
+  box-shadow: 0px 8px 32px 0 rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(3px);
+  padding: 0px 16px 16px 16px;
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.home-fan .ant-switch-checked {
+  background-color: #1cbf68 !important;
+  /* Màu sắc khi enabled */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-bulb .ant-switch-checked {
+  background-color: #E0F833 !important;
+  /* Màu sắc khi enabled */
+}
+
+
+
+.ant-switch-disabled {
+  background-color: #ccc !important;
+  /* Màu sắc khi disabled */
+}
+
+.ant-slider-rail {
+  background: #F7400C !important;
+}
+
+.ant-slider-rail:hover {
+  background: #F79B63 !important;
+}
+
+/* .main-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418)), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg');
+  background-size: cover;
+  background-position: center;
+} */
+
+.main-container {
+  margin-left: 30px;
+  width: 200px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  outline: none;
+  padding: 20px 7%;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 5%;
+  background: rgba(250, 250, 250, 0.85);
+}
+
+.city {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 8%;
+  border-radius: 20px;
+  background: rgba(250, 250, 250, 0.85);
+  /* box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404); */
+}
+
+p {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1e2432;
+  text-align: center;
+}
+
+.city sup {
+  font-size: 0.5em;
+}
+
+.city-name {
+  font-size: 2em;
+}
+
+.city-name sup {
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #fff;
+  background: #ff8c00;
+}
+
+.city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .search {
+    padding: 20px 15%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .city {
+    padding: 40px 20%;
   }
 }
